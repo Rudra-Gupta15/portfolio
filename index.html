@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Rudra Gupta - Electronics Engineering student and AI/ML intern specializing in game development, AI/ML, and UI/UX design">
+    <meta name="keywords" content="Rudra Gupta, Electronics Engineering, AI/ML, Game Development, UI/UX Design">
+    <meta name="author" content="Rudra Gupta">
+    <title>Rudra Gupta | AI/ML Developer & Game Dev Enthusiast</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="dark-theme">
+    <!-- Parallax Background Layers -->
+    <div class="parallax-wrapper">
+        <div class="parallax-element blob-top" data-parallax-speed="0.2"></div>
+        <div class="parallax-element blob-mid" data-parallax-speed="-0.1"></div>
+        <div class="parallax-element blob-bottom" data-parallax-speed="0.15"></div>
+        <div class="parallax-element star-cluster-1" data-parallax-speed="0.05"></div>
+        <div class="parallax-element star-cluster-2" data-parallax-speed="0.1"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <span class="logo-text">RG</span>
+            </div>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container hero-container">
+            <!-- Left/Center Info Box -->
+            <div class="hero-info-box reveal">
+                <span class="system-tag">AI/ML ENGINEER</span>
+                <h1 class="hero-title">RUDRA GUPTA</h1>
+                <p class="hero-short-intro">Crafting intelligent systems and immersive experiences at the intersection
+                    of hardware and AI.</p>
+                <div class="hero-btns">
+                    <a href="javascript:void(0)" onclick="openResumeModal()" class="btn btn-primary">Download CV</a>
+                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                </div>
+            </div>
+
+            <!-- Right Aligned Solar System Area -->
+            <div class="hero-solar-area">
+                <div class="solar-system-container">
+                    <!-- The Sun (Small beige core for orbits) -->
+                    <div class="hero-center-circle">
+                        <div class="core-dot"></div>
+                    </div>
+
+                    <!-- Orbiting Paths -->
+                    <div class="orbit-path path-1"></div>
+                    <div class="orbit-path path-2"></div>
+                    <div class="orbit-path path-3"></div>
+
+                    <!-- Orbiting Planets (Clock Cycle) -->
+                    <div class="orbiting-circle planet-1"></div>
+                    <div class="orbiting-circle planet-2"></div>
+                    <div class="orbiting-circle planet-3"></div>
+                    <div class="orbiting-circle planet-4"></div>
+                    <div class="orbiting-circle planet-5"></div>
+                    <div class="orbiting-circle planet-6"></div>
+
+                    <!-- Orbiting Star Circles -->
+                    <div class="orbiting-circle" id="resume-orbiter">
+                        <div class="orbiter-content">
+                            <span class="orbiter-icon">📄</span>
+                            <h3>Resume</h3>
+                            <p>Professional Details</p>
+                        </div>
+                    </div>
+
+                    <div class="orbiting-circle" id="studies-orbiter">
+                        <div class="orbiter-content">
+                            <span class="orbiter-icon">🎓</span>
+                            <h3>Education</h3>
+                            <p>B.Tech Electronics</p>
+                        </div>
+                    </div>
+                    <!-- Thesis removed -->
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title reveal">Profile Overview</h2>
+            <div class="dashboard-grid about-dashboard">
+                <!-- Main Info Card -->
+                <div class="dashboard-widget main-bio reveal">
+                    <div class="widget-header">
+                        <span class="status-indicator"></span>
+                        <h3>System Core</h3>
+                    </div>
+                    <p>AI/ML Engineering student with hands-on experience in building production-ready systems.
+                        Passionate about
+                        bridging the gap between hardware and software through intelligent automation and immersive
+                        simulation.</p>
+                    <div class="mini-stats">
+                        <div class="stat-item">
+                            <span class="stat-value">95%</span>
+                            <span class="stat-label">ML Accuracy</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">VLSI</span>
+                            <span class="stat-label">Specialization</span>
+                        </div>
+                    </div>
+                    <!-- Decorative Chart -->
+                    <svg class="decorative-chart" width="100" height="40" viewBox="0 0 100 40">
+                        <path d="M0 35 Q 25 35, 50 15 T 100 5" fill="none" stroke="var(--accent-primary)"
+                            stroke-width="2" />
+                    </svg>
+                </div>
+
+                <!-- Overlapping Layered Cards -->
+                <div class="dashboard-widget visual-elements reveal">
+                    <div class="floating-layer layer-1">
+                        <span class="layer-icon">🤖</span>
+                        <h4>AI/ML Engineering</h4>
+                        <p>Developing and deploying machine learning models for real-world applications with 95%+
+                            accuracy.</p>
+                    </div>
+                    <div class="floating-layer layer-2">
+                        <span class="layer-icon">🚀</span>
+                        <h4>Computer Vision</h4>
+                        <p>Specialized in YOLOv8, CNN-LSTM, and real-time object detection for security and medical AI.
+                        </p>
+                    </div>
+                    <div class="floating-layer layer-3">
+                        <span class="layer-icon">🎮</span>
+                        <h4>Game Development</h4>
+                        <p>Exploring interactive experiences through Unity, game mechanics design, and physics systems
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2 class="section-title reveal">Featured Projects</h2>
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="aiml">AI/ML</button>
+                <button class="filter-btn" data-filter="hardware">Hardware</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+            </div>
+
+            <!-- Projects Grid Content -->
+            <div class="projects-grid">
+                <!-- Major Project: Sign Language Recognition -->
+                <!-- Project 1: Sign Language Recognition -->
+
+                <!-- Project 2: Violence Detection -->
+                <!-- Project 1: Sign Language Recognition -->
+                <div class="project-card reveal" data-category="aiml" data-project-id="sign-language">
+                    <div class="project-image">
+                        <img src="file:///C:/Users/Rudra%20Gupta/.gemini/antigravity/brain/96765972-f4a8-4a18-b95a-6f15bd48b19d/uploaded_media_1769611443602.jpg"
+                            alt="Sign Language Recognition Interface">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <span class="project-category">MAJOR PROJECT • AI/ML</span>
+                            <h3 class="project-title">Sign Language recognition using ML</h3>
+                        </div>
+                        <p class="project-description">
+                            Developed a real-time hand gesture recognition system using OpenCV and deep learning to
+                            bridge communication gaps. Integrated YOLOv8 and CNN models.
+                        </p>
+                        <div class="project-tech-stack">
+                            <span class="skill-tag">YOLOv8</span>
+                            <span class="skill-tag">OpenCV</span>
+                            <span class="skill-tag">Python</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Violence Detection -->
+                <div class="project-card reveal" data-category="aiml" data-project-id="violence-detection">
+                    <div class="project-image">
+                        <img src="file:///C:/Users/Rudra%20Gupta/.gemini/antigravity/brain/96765972-f4a8-4a18-b95a-6f15bd48b19d/security_detection_cover_1769606606755.png"
+                            alt="Violence Detection">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <span class="project-category">AI/ML SECURITY</span>
+                            <h3 class="project-title">Violence Detection System</h3>
+                        </div>
+                        <p class="project-description">
+                            Hybrid CNN-LSTM model for real-time violence detection in video streams, analyzing temporal
+                            sequences for automated security monitoring.
+                        </p>
+                        <div class="project-tech-stack">
+                            <span class="skill-tag">Keras</span>
+                            <span class="skill-tag">CNN-LSTM</span>
+                            <span class="skill-tag">Python</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Heart Disease Prediction -->
+                <div class="project-card reveal" data-category="aiml" data-project-id="heart-disease">
+                    <div class="project-image">
+                        <img src="file:///C:/Users/Rudra%20Gupta/.gemini/antigravity/brain/96765972-f4a8-4a18-b95a-6f15bd48b19d/uploaded_media_1769611819506.png"
+                            alt="Heart Disease Prediction">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <span class="project-category">HEALTHCARE AI</span>
+                            <h3 class="project-title">Heart Disease Prediction</h3>
+                        </div>
+                        <p class="project-description">
+                            Diagnostic tool using ML classification (Random Forest, XGBoost) to assess cardiovascular
+                            risk with high confidence metrics.
+                        </p>
+                        <div class="project-tech-stack">
+                            <span class="skill-tag">Scikit-learn</span>
+                            <span class="skill-tag">Pandas</span>
+                            <span class="skill-tag">ML</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: ML Algorithm Comparison -->
+                <div class="project-card reveal" data-category="aiml" data-project-id="ml-benchmarking">
+                    <div class="project-image">
+                        <img src="file:///C:/Users/Rudra%20Gupta/.gemini/antigravity/brain/96765972-f4a8-4a18-b95a-6f15bd48b19d/uploaded_media_0_1769613722621.png"
+                            alt="ML Algorithm Comparison">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <span class="project-category">RESEARCH AI</span>
+                            <h3 class="project-title">ML Algorithm Comparison</h3>
+                        </div>
+                        <p class="project-description">
+                            Comparative analysis benchmark evaluating performance metrics across multiple
+                            classification/regression models.
+                        </p>
+                        <div class="project-tech-stack">
+                            <span class="skill-tag">Matplotlib</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">Analytics</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5: CodePath Platform -->
+                <div class="project-card reveal" data-category="web" data-project-id="codepath">
+                    <div class="project-image">
+                        <img src="file:///C:/Users/Rudra%20Gupta/.gemini/antigravity/brain/96765972-f4a8-4a18-b95a-6f15bd48b19d/uploaded_media_1769617393955.png"
+                            alt="CodePath Platform">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <span class="project-category">WEB DEVELOPMENT</span>
+                            <h3 class="project-title">CodePath Learning Platform</h3>
+                        </div>
+                        <p class="project-description">
+                            Interactive coding environment fostering community learning with real-time code execution
+                            and progress tracking.
+                        </p>
+                        <div class="project-tech-stack">
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">Web</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6: Raj Food Machine -->
+                <div class="project-card reveal" data-category="hardware" data-project-id="food-machine">
+                    <div class="project-image">
+                        <img src="file:///C:/Users/Rudra%20Gupta/.gemini/antigravity/brain/96765972-f4a8-4a18-b95a-6f15bd48b19d/food_machine_cover_1769606455271.png"
+                            alt="Raj Food Machine">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <span class="project-category">ENGINEERING HARDWARE</span>
+                            <h3 class="project-title">Raj Food Machine Automation</h3>
+                        </div>
+                        <p class="project-description">
+                            Industrial automation system focusing on precision heat control (PID) and automated sorting
+                            logic for food processing.
+                        </p>
+                        <div class="project-tech-stack">
+                            <span class="skill-tag">IoT</span>
+                            <span class="skill-tag">PLC</span>
+                            <span class="skill-tag">Sensors</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 7: Device Recommendation -->
+                <div class="project-card reveal" data-category="aiml" data-project-id="device-recommendation">
+                    <div class="project-image">
+                        <img src="file:///C:/Users/Rudra%20Gupta/.gemini/antigravity/brain/96765972-f4a8-4a18-b95a-6f15bd48b19d/uploaded_media_1769612034114.png"
+                            alt="Device Recommendation">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <span class="project-category">DATA SCIENCE</span>
+                            <h3 class="project-title">Laptop & Mobile Recommendation</h3>
+                        </div>
+                        <p class="project-description">
+                            Recommendation engine suggesting devices based on user specifications and budget using data
+                            analysis.
+                        </p>
+                        <div class="project-tech-stack">
+                            <span class="skill-tag">Pandas</span>
+                            <span class="skill-tag">NumPy</span>
+                            <span class="skill-tag">Filtering</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <h2 class="section-title reveal">Technical Expertise</h2>
+
+            <div class="skills-primary">
+                <!-- Programming Languages -->
+                <div class="skill-domain reveal">
+                    <div class="domain-header">
+                        <span class="domain-icon">💻</span>
+                        <h3 class="domain-title">Programming Languages</h3>
+                    </div>
+                    <div class="skill-tags-grid">
+                        <span class="skill-pill">Python</span>
+                        <span class="skill-pill">C++</span>
+                        <span class="skill-pill">C#</span>
+                        <span class="skill-pill">JavaScript</span>
+                        <span class="skill-pill">Embedded C</span>
+                        <span class="skill-pill">SQL</span>
+                    </div>
+                </div>
+
+                <!-- AI/ML & Data Science -->
+                <div class="skill-domain reveal">
+                    <div class="domain-header">
+                        <span class="domain-icon">🤖</span>
+                        <h3 class="domain-title">AI/ML & Data Science</h3>
+                    </div>
+                    <div class="skill-tags-grid">
+                        <span class="skill-pill">TensorFlow</span>
+                        <span class="skill-pill">PyTorch</span>
+                        <span class="skill-pill">Scikit-learn</span>
+                        <span class="skill-pill">OpenCV</span>
+                        <span class="skill-pill">Keras</span>
+                        <span class="skill-pill">Pandas</span>
+                        <span class="skill-pill">NumPy</span>
+                        <span class="skill-pill">Matplotlib</span>
+                    </div>
+                </div>
+
+                <!-- Web Development -->
+                <div class="skill-domain reveal">
+                    <div class="domain-header">
+                        <span class="domain-icon">🌐</span>
+                        <h3 class="domain-title">Web Development</h3>
+                    </div>
+                    <div class="skill-tags-grid">
+                        <span class="skill-pill">HTML5</span>
+                        <span class="skill-pill">CSS3</span>
+                        <span class="skill-pill">React</span>
+                        <span class="skill-pill">Responsive Design</span>
+                        <span class="skill-pill">BootStrap</span>
+                    </div>
+                </div>
+
+                <!-- Hardware & Embedded -->
+                <div class="skill-domain reveal">
+                    <div class="domain-header">
+                        <span class="domain-icon">⚡</span>
+                        <h3 class="domain-title">Hardware & Embedded</h3>
+                    </div>
+                    <div class="skill-tags-grid">
+                        <span class="skill-pill">Arduino</span>
+                        <span class="skill-pill">Raspberry Pi</span>
+                        <span class="skill-pill">Circuit Design</span>
+                        <span class="skill-pill">Multisim</span>
+                        <span class="skill-pill">IoT</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-secondary reveal">
+                <h3 class="secondary-title">Tools & Frameworks</h3>
+                <div class="secondary-tags">
+                    <span class="secondary-tag">Unity</span>
+                    <span class="secondary-tag">TensorFlow</span>
+                    <span class="secondary-tag">OpenCV</span>
+                    <span class="secondary-tag">Git</span>
+                    <span class="secondary-tag">React</span>
+                    <span class="secondary-tag">PyTorch</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Assistant Element -->
+    <div id="ai-assistant-container" class="ai-assistant-container">
+        <div class="ai-speech-bubble" id="ai-speech-bubble">Hi, I'm here if you want to explore the cosmic portfolio! 👋
+        </div>
+        <div class="ai-robot" id="ai-robot">
+            <svg width="80" height="80" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Robot Body -->
+                <rect x="15" y="25" width="30" height="25" rx="5" fill="#33273c" stroke="#9c83a6" stroke-width="1" />
+                <!-- Robot Head -->
+                <rect x="20" y="12" width="20" height="15" rx="4" fill="#1a1423" stroke="#9c83a6" stroke-width="1" />
+                <!-- Eyes -->
+                <circle class="robot-eye" cx="25" cy="19" r="2" fill="#FAF1EC" />
+                <circle class="robot-eye" cx="35" cy="19" r="2" fill="#FAF1EC" />
+                <!-- Antena -->
+                <line x1="30" y1="12" x2="30" y2="7" stroke="#9c83a6" stroke-width="2" />
+                <circle cx="30" cy="5" r="2" fill="#5e4765" />
+            </svg>
+        </div>
+    </div>
+
+    <!-- Experience & Education Dashboard -->
+    <section class="experience" id="experience">
+        <div class="container">
+            <h2 class="section-title reveal">Professional Path</h2>
+            <div class="timeline">
+                <!-- AI/ML Intern -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Current</span>
+                        <h3 class="timeline-title">AI/ML Intern</h3>
+                        <span class="timeline-company">Freelance / Remote</span>
+                        <p class="timeline-description">Developing and deploying machine learning models for real-world
+                            applications. Key achievements include:</p>
+                        <ul class="experience-list">
+                            <li>Built real-time computer vision systems with 95%+ accuracy.</li>
+                            <li>Optimized neural network architectures for edge deployment.</li>
+                            <li>Collaborated on end-to-end ML pipelines from data collection to production.</li>
+                            <li>Implemented CNN-LSTM models for temporal sequence analysis.</li>
+                        </ul>
+                        <div class="tech-stack-row">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">TensorFlow</span>
+                            <span class="skill-tag">OpenCV</span>
+                            <span class="skill-tag">ML Ops</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- B.Tech Electronics -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2022 – 2026</span>
+                        <h3 class="timeline-title">B.Tech Electronics Engineering</h3>
+                        <span class="timeline-company">Yeshwantrao Chavan College of Engineering, Nagpur</span>
+                        <p class="timeline-description">Focusing on VLSI Design and Embedded Systems.
+                            Current CGPA: 8.42. Honors: VLSI Design.</p>
+                        <div class="tech-stack-row">
+                            <span class="skill-tag">VLSI</span>
+                            <span class="skill-tag">Embedded Systems</span>
+                            <span class="skill-tag">Digital Electronics</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Engineering Intern -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2022 – 2023</span>
+                        <h3 class="timeline-title">Engineering Intern</h3>
+                        <span class="timeline-company">Raj Food Machine</span>
+                        <p class="timeline-description">Solid foundation in circuit design, embedded systems, and IoT
+                            with hands-on hardware experience. Focused on electronics integration and machine automation
+                            systems.</p>
+                        <ul class="experience-list">
+                            <li>Integrated and calibrated sensors for industrial machinery monitoring and control
+                                systems.</li>
+                            <li>Configured motherboard connections and managed operation for machine automation.</li>
+                            <li>Performed wiring, circuit connections, and electrical troubleshooting for
+                                production-ready systems.</li>
+                            <li>Hardware assembly and testing of automated industrial food-processing equipment.</li>
+                        </ul>
+                        <div class="tech-stack-row">
+                            <span class="skill-tag">IoT</span>
+                            <span class="skill-tag">PLC</span>
+                            <span class="skill-tag">Sensors</span>
+                            <span class="skill-tag">Automation</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Class XII -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2021 – 2022</span>
+                        <h3 class="timeline-title">Class XII (Senior Secondary)</h3>
+                        <span class="timeline-company">St. Paul School, Nagpur</span>
+                        <p class="timeline-description">Secured 77% in Higher Secondary Examinations.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Education & Certs Dashboard -->
+    <section class="certifications" id="certifications">
+        <div class="container">
+            <h2 class="section-title reveal">CERTIFICATIONS & TRAINING</h2>
+            <div class="certifications-grid">
+                <!-- Python Cert -->
+                <div class="cert-card reveal">
+                    <span class="cert-icon">🐍</span>
+                    <h3 class="cert-title">Python 3.4.3 Training</h3>
+                    <p class="cert-issuer">Spoken Tutorial Project, IIT Bombay</p>
+                    <p class="cert-description" style="color: #a8b2d1; font-size: 0.95rem; margin-top: 10px;">
+                        Comprehensive training focused on Python fundamentals, programming logic, and practical
+                        implementation for real-world applications.
+                    </p>
+                </div>
+
+                <!-- DSA Cert -->
+                <div class="cert-card reveal">
+                    <span class="cert-icon">💻</span>
+                    <h3 class="cert-title">Data Structures & Algorithms in C++</h3>
+                    <p class="cert-issuer">Professional Training Program</p>
+                    <p class="cert-description" style="color: #a8b2d1; font-size: 0.95rem; margin-top: 10px;">
+                        In-depth coverage of core data structures, problem-solving techniques, and algorithmic thinking
+                        for efficient software development.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership & Activities Section -->
+    <section class="leadership" id="leadership">
+        <div class="container">
+            <h2 class="section-title reveal">Leadership & Extracurricular Activities</h2>
+            <div class="leadership-content">
+                <div class="leadership-card reveal">
+                    <div class="leadership-header">
+                        <div class="leadership-icon">🎯</div>
+                        <div class="leadership-details">
+                            <h3 class="leadership-title">Vice President – Sponsorship</h3>
+                            <p class="leadership-organization">College Technical Fest (ICON)</p>
+                        </div>
+                    </div>
+                    <ul class="leadership-achievements">
+                        <li>Coordinated with sponsors and corporate partners to secure funding and support</li>
+                        <li>Assisted in event planning, budgeting, and resource allocation for technical fest</li>
+                        <li>Led team coordination efforts and managed sponsor relationships throughout the event</li>
+                        <li>Gained valuable leadership, communication, and organizational experience</li>
+                    </ul>
+                    <div class="leadership-skills">
+                        <span class="skill-tag">Leadership</span>
+                        <span class="skill-tag">Sponsorship Management</span>
+                        <span class="skill-tag">Event Planning</span>
+                        <span class="skill-tag">Team Coordination</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section class="achievements" id="achievements">
+        <div class="container">
+            <h2 class="section-title reveal">Achievements</h2>
+            <div class="achievements-grid">
+                <div class="achievement-card reveal">
+                    <div class="achievement-icon">🏆</div>
+                    <h3 class="achievement-title">Inter-School Chess Champion</h3>
+                    <p class="achievement-location">Nagpur</p>
+                    <p class="achievement-description">
+                        Secured championship title in inter-school chess competition demonstrating strategic thinking
+                        and competitive excellence.
+                    </p>
+                </div>
+
+                <div class="achievement-card reveal">
+                    <div class="achievement-icon">👑</div>
+                    <h3 class="achievement-title">Nagpur District Chess Champion</h3>
+                    <p class="achievement-location">Nagpur District Level</p>
+                    <p class="achievement-description">
+                        District-level chess championship victory showcasing advanced game strategy and
+                        analytical problem-solving skills.
+                    </p>
+                </div>
+
+                <div class="achievement-card reveal">
+                    <div class="achievement-icon">⭐</div>
+                    <h3 class="achievement-title">State-Level Chess Qualification</h3>
+                    <p class="achievement-location">8th Grade Achievement</p>
+                    <p class="achievement-description">
+                        Qualified for state-level chess championship, representing district at the state competition
+                        level.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title reveal">Get In Touch</h2>
+            <p class="contact-subtitle reveal">
+                I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
+            </p>
+
+            <div class="contact-grid">
+                <!-- Mobile -->
+                <a href="tel:+919075569787" class="contact-card reveal">
+                    <div class="contact-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.78 12.78 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="contact-info">
+                        <span class="contact-label">Mobile</span>
+                        <span class="contact-text">90755 69787</span>
+                    </div>
+                </a>
+
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/rudra-kumar-gupta" target="_blank" rel="noopener noreferrer"
+                    class="contact-card reveal">
+                    <div class="contact-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                            </path>
+                            <rect x="2" y="9" width="4" height="12"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                    </div>
+                    <div class="contact-info">
+                        <span class="contact-label">LinkedIn</span>
+                        <span class="contact-text">rudra-kumar-gupta</span>
+                    </div>
+                </a>
+
+                <!-- GitHub -->
+                <a href="https://github.com/Rudra-Gupta15" target="_blank" rel="noopener noreferrer"
+                    class="contact-card reveal">
+                    <div class="contact-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="contact-info">
+                        <span class="contact-label">GitHub</span>
+                        <span class="contact-text">Rudra-Gupta15</span>
+                    </div>
+                </a>
+
+                <!-- Gmail -->
+                <a href="mailto:kumarguptarudra15@gmail.com" class="contact-card card-long reveal">
+                    <div class="contact-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                            </path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                    </div>
+                    <div class="contact-info">
+                        <span class="contact-label">Gmail</span>
+                        <span class="contact-text">kumarguptarudra15@gmail.com</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Bot CTA -->
+    <div class="bot-cta-container reveal">
+        <div class="bot-cta-box">
+            <span class="bot-cta-icon">🤖</span>
+            <p class="bot-cta-text">If you want to know about my details, ask the bot!</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span id="currentYear"></span> Rudra Gupta. All rights reserved.</p>
+            <p class="footer-tagline">Designed & Built with passion</p>
+        </div>
+    </footer>
+
+
+    <!-- Project Detail Modal -->
+    <div id="project-modal" class="modal">
+        <div class="modal-overlay" onclick="closeModal()"></div>
+        <div class="modal-container reveal">
+            <button class="modal-close" onclick="closeModal()" aria-label="Close modal">&times;</button>
+            <div class="modal-content">
+                <div class="modal-image-container">
+                    <img id="modal-image" src="" alt="Project Image">
+                </div>
+                <div class="modal-details">
+                    <div id="modal-category" class="project-category"></div>
+                    <h2 id="modal-title" class="modal-title"></h2>
+                    <div id="modal-description" class="modal-description"></div>
+                    <div class="modal-points-container">
+                        <h3>Key Highlights:</h3>
+                        <ul id="modal-points" class="modal-points"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Education Modal -->
+    <div id="education-modal" class="modal">
+        <div class="modal-overlay" onclick="closeEducationModal()"></div>
+        <div class="modal-container reveal" style="max-width: 600px; text-align: center;">
+            <button class="modal-close" onclick="closeEducationModal()" aria-label="Close modal">&times;</button>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span style="font-size: 3rem; display: block; margin-bottom: 20px;">🎓</span>
+                    <h2 class="modal-title">Education Journey</h2>
+                </div>
+                <div class="education-details" style="text-align: left; margin-top: 20px;">
+                    <div class="edu-item"
+                        style="margin-bottom: 30px; padding: 20px; background: rgba(255,255,255,0.03); border-radius: 12px; border: 1px solid rgba(137, 203, 255, 0.1);">
+                        <h3 style="color: #fff; margin-bottom: 5px;">B.Tech Electronics Engineering</h3>
+                        <p style="color: var(--accent-primary); font-weight: 600;">Yeshwantrao Chavan College of
+                            Engineering, Nagpur</p>
+                        <p style="color: #8892b0; font-size: 0.9rem; margin-top: 10px;">2022 – 2026</p>
+                        <div style="display: flex; gap: 15px; margin-top: 15px;">
+                            <span class="skill-pill">CGPA: 8.42</span>
+                            <span class="skill-pill">Honors: VLSI Design</span>
+                        </div>
+                    </div>
+
+                    <div class="edu-item"
+                        style="padding: 20px; background: rgba(255,255,255,0.03); border-radius: 12px; border: 1px solid rgba(137, 203, 255, 0.1);">
+                        <h3 style="color: #fff; margin-bottom: 5px;">Class XII</h3>
+                        <p style="color: var(--accent-primary); font-weight: 600;">St. Paul School, Nagpur</p>
+                        <p style="color: #8892b0; font-size: 0.9rem; margin-top: 10px;">2021 – 2022</p>
+                        <div style="display: flex; gap: 15px; margin-top: 15px;">
+                            <span class="skill-pill">Percentage: 77%</span>
+                            <span class="skill-pill">Science Stream</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Resume Modal -->
+    <div id="resume-modal" class="modal">
+        <div class="modal-overlay" onclick="closeResumeModal()"></div>
+        <div class="modal-container reveal" style="max-width: 800px; text-align: center;">
+            <button class="modal-close" onclick="closeResumeModal()" aria-label="Close modal">&times;</button>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span style="font-size: 2.5rem; display: block; margin-bottom: 20px;">📄</span>
+                    <h2 class="modal-title">Professional Resume</h2>
+                </div>
+                <div class="resume-preview-container"
+                    style="max-height: 70vh; overflow-y: auto; margin-top: 20px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1);">
+                    <img src="file:///C:/Users/Rudra Gupta/.gemini/antigravity/brain/8e6d044a-4414-4c7d-965e-0f9bef853159/uploaded_media_1_1769679811694.png"
+                        alt="Resume Preview" style="width: 100%; display: block; border-radius: 4px;">
+                </div>
+                <!-- Optional Download Button -->
+                <div style="margin-top: 20px;">
+                    <a href="file:///C:/Users/Rudra Gupta/.gemini/antigravity/brain/8e6d044a-4414-4c7d-965e-0f9bef853159/uploaded_media_1_1769679811694.png"
+                        download="Rudra_Gupta_Resume.png" class="btn btn-primary">Download Resume</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
