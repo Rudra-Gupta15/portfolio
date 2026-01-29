@@ -158,7 +158,7 @@ const projectData = {
     'sign-language': {
         title: 'Sign Language recognition using ML',
         category: 'Major Project • AI/ML',
-        image: 'file:///C:/Users/Rudra%20Gupta/.gemini/antigravity/brain/96765972-f4a8-4a18-b95a-6f15bd48b19d/uploaded_media_1769611443602.jpg',
+        image: './images/sign-language.jpg',
         description: 'A cutting-edge computer vision system designed to bridge the communication gap for the hearing and speech impaired. This project uses YOLOv8 to detect and translate hand gestures into text in real-time.',
         points: [
             'Achieved 95%+ accuracy in static gesture recognition',
@@ -170,7 +170,7 @@ const projectData = {
     'violence-detection': {
         title: 'Violence Detection System',
         category: 'AI/ML Security',
-        image: 'file:///C:/Users/Rudra%20Gupta/.gemini/antigravity/brain/96765972-f4a8-4a18-b95a-6f15bd48b19d/security_detection_cover_1769606606755.png',
+        image: './images/violence-detection.png',
         description: 'An advanced security solution that uses a hybrid CNN-LSTM architecture to identify violent behavior in video surveillance streams instantly.',
         points: [
             'Analyzes temporal patterns across frames using LSTM',
@@ -182,7 +182,7 @@ const projectData = {
     'heart-disease': {
         title: 'Heart Disease Prediction',
         category: 'Healthcare AI',
-        image: 'file:///C:/Users/Rudra%20Gupta/.gemini/antigravity/brain/96765972-f4a8-4a18-b95a-6f15bd48b19d/uploaded_media_1769611819506.png',
+        image: './images/heart-disease.png',
         description: 'A reliable diagnostic assistant that evaluates patient data to assess the risk of cardiovascular diseases using machine learning classification algorithms.',
         points: [
             'Utilized Random Forest and XGBoost for robust classification',
@@ -194,7 +194,7 @@ const projectData = {
     'ml-benchmarking': {
         title: 'ML Algorithm Comparison',
         category: 'Research AI',
-        image: 'file:///C:/Users/Rudra%20Gupta/.gemini/antigravity/brain/96765972-f4a8-4a18-b95a-6f15bd48b19d/uploaded_media_0_1769613722621.png',
+        image: './images/ml-benchmarking.png',
         description: 'A research-focused project comparing various machine learning models to help developers choose the best algorithm for specific tasks based on performance metrics.',
         points: [
             'Benchmarks Accuracy, Precision, Recall, and F1-Score',
@@ -206,7 +206,7 @@ const projectData = {
     'codepath': {
         title: 'CodePath Learning Platform',
         category: 'Web Development',
-        image: 'file:///C:/Users/Rudra%20Gupta/.gemini/antigravity/brain/96765972-f4a8-4a18-b95a-6f15bd48b19d/uploaded_media_1769617393955.png',
+        image: './images/codepath.png',
         description: 'An interactive coding platform built to foster community learning, featuring a browser-based editor and progress tracking for various technical tracks.',
         points: [
             'Real-time code execution environment',
@@ -218,7 +218,7 @@ const projectData = {
     'food-machine': {
         title: 'Raj Food Machine Automation',
         category: 'Engineering Hardware',
-        image: 'file:///C:/Users/Rudra%20Gupta/.gemini/antigravity/brain/96765972-f4a8-4a18-b95a-6f15bd48b19d/food_machine_cover_1769606455271.png',
+        image: './images/food-machine.png',
         description: 'Industrial automation project for food processing machinery, focusing on precision heat control and automated sorting logic.',
         points: [
             'PID control loops for high-precision temperature stability',
@@ -230,7 +230,7 @@ const projectData = {
     'device-recommendation': {
         title: 'Laptop & Mobile Recommendation',
         category: 'Data Science',
-        image: 'file:///C:/Users/Rudra%20Gupta/.gemini/antigravity/brain/96765972-f4a8-4a18-b95a-6f15bd48b19d/uploaded_media_1769612034114.png',
+        image: './images/device-recommendation.png',
         description: 'A personalized engine that scores devices based on user preferences and technical specifications to provide the best hardware match.',
         points: [
             'Dynamic scoring algorithm based on hardware benchmarks',

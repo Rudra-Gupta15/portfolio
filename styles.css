@@ -283,6 +283,71 @@ img {
     width: 100%;
 }
 
+/* Mobile Toggle */
+.mobile-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 6px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 1001;
+    padding: 5px;
+}
+
+.mobile-toggle span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background: var(--text-primary);
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+/* Burger Animation */
+.mobile-toggle.active span:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+}
+
+.mobile-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.mobile-toggle.active span:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+}
+
+@media (max-width: 768px) {
+    .mobile-toggle {
+        display: flex;
+    }
+
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 80%;
+        height: 100vh;
+        background: var(--bg-glass);
+        backdrop-filter: blur(25px);
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        transition: 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+        z-index: 1000;
+        box-shadow: -10px 0 30px rgba(0, 0, 0, 0.5);
+    }
+
+    .nav-menu.active {
+        right: 0;
+    }
+
+    .nav-link {
+        font-size: 1.5rem;
+    }
+}
+
 /* Theme Toggle - Day/Night Illustrated Switch */
 .theme-toggle {
     background: #0d0d1a;
@@ -2375,8 +2440,8 @@ section {
     /* Hero responsive */
     .hero-container {
         flex-direction: column !important;
-        padding: 80px 20px !important;
-        gap: 20px !important;
+        padding: 100px 20px !important;
+        gap: 40px !important;
         height: auto !important;
         min-height: 100vh;
         justify-content: center;
@@ -2393,22 +2458,36 @@ section {
         justify-content: center !important;
         margin-left: 0 !important;
         width: 100%;
-        margin-top: -30px;
+        margin-top: 20px;
     }
 
     .solar-system-container {
-        width: 300px !important;
-        height: 300px !important;
-        transform: scale(0.9);
+        width: 280px !important;
+        height: 280px !important;
+        transform: scale(0.85);
     }
 
     .hero-title {
-        font-size: 3.5rem !important;
+        font-size: 3rem !important;
         letter-spacing: -1px;
+        white-space: normal;
+        line-height: 1.1;
     }
 
     .hero-btns {
         justify-content: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    /* Parallax Fix for Mobile */
+    .parallax-wrapper {
+        display: none;
+        /* Hide expensive/breaking parallax on mobile */
     }
 
     /* Timeline responsive */
@@ -2449,5 +2528,9 @@ section {
         transform: none !important;
         margin-bottom: 20px;
         width: 100%;
+    }
+
+    .main-bio {
+        max-width: 100%;
     }
 }
