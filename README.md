@@ -8,7 +8,7 @@
 
 This portfolio is designed to present my work, technical skills, and projects in a clean and interactive way. It highlights real-world AI initiatives and software development with a focus on user-friendly design and smooth navigation.
 
-[**Live Demo ✨**](https://your-link-here.com) | [**View Projects 📁**](#-project-structure)
+[**Live Demo ✨**](https://your-link-here.com) 
 
 ---
 
@@ -26,9 +26,7 @@ This portfolio is designed to present my work, technical skills, and projects in
 
 | Category | Tools & Technologies |
 | :--- | :--- |
-| **Frontend** | HTML5, CSS3, JavaScript (ES6+) |
-| **AI/ML** | Python, RAG, NLP, GGUF Models |
-| **Logic** | Interactive JS, Data Structures |
+| **Frontend** | HTML5, CSS3, JavaScript |
 | **Design** | Modern Layouts, Responsive Grids |
 
 ---
