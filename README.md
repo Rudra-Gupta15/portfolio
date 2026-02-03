@@ -1,32 +1,42 @@
-🚀 Overview
+# 🚀 Modern Interactive Portfolio
 
-This portfolio is designed to present my work, technical skills, and projects in a clean and interactive way. It highlights real-world AI and development projects with a focus on user-friendly design and smooth navigation.
+<p align="center">
+  <img src="https://img.shields.io/badge/Maintained-Yes-green.svg" />
+  <img src="https://img.shields.io/badge/UI-Responsive-blue.svg" />
+  <img src="https://img.shields.io/badge/Focus-AI%20%26%20GameDev-orange.svg" />
+</p>
 
-✨ Features
+This portfolio is designed to present my work, technical skills, and projects in a clean and interactive way. It highlights real-world AI initiatives and software development with a focus on user-friendly design and smooth navigation.
 
-Responsive design for all screen sizes
+[**Live Demo ✨**](https://your-link-here.com) | [**View Projects 📁**](#-project-structure)
 
-Smooth scrolling and interactive UI
+---
 
-Project showcase section
+## ✨ Key Features
 
-Skills and technology stack display
+* 📱 **Responsive Design** – Seamless experience across all screen sizes.
+* 💫 **Smooth UI** – Interactive elements and fluid scrolling animations.
+* 🤖 **AI/ML Showcase** – Dedicated sections for RAG and NLP projects.
+* 🎮 **Game Dev Focus** – Highlights technical architecture and logic.
+* 🛠️ **Modern Stack** – Built with clean, maintainable code.
 
-Contact section
+---
 
-Clean layout with modern styling
+## 🛠️ Tech Stack
 
-🛠️ Tech Stack
+| Category | Tools & Technologies |
+| :--- | :--- |
+| **Frontend** | HTML5, CSS3, JavaScript (ES6+) |
+| **AI/ML** | Python, RAG, NLP, GGUF Models |
+| **Logic** | Interactive JS, Data Structures |
+| **Design** | Modern Layouts, Responsive Grids |
 
-HTML – Structure of the website
+---
 
-CSS – Styling, layout, and responsiveness
+## 📁 Project Structure
 
-JavaScript – Interactivity and dynamic behavior
-
-📁 Project Structure
+```bash
 portfolio/
-│
-├── index.html
-├── style.css
-└── script.js
+├── index.html    # Site structure & SEO
+├── style.css     # Modern styling & animations
+└── script.js     # Interactivity & dynamic behavior
